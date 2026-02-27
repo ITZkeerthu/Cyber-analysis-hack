@@ -1,0 +1,151 @@
+.graph-view {
+  padding: 10px;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.graph-header h3 {
+  color: #00ffff;
+  margin: 0;
+}
+
+.graph-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.graph-controls button {
+  padding: 8px 15px;
+  background: rgba(20, 20, 35, 0.8);
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.graph-controls button:hover {
+  background: rgba(0, 255, 255, 0.1);
+  border-color: #00ffff;
+}
+
+.graph-container {
+  background: rgba(10, 10, 15, 0.8);
+  overflow: hidden;
+}
+
+.graph-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(20, 20, 35, 0.5);
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.stat-value.highlight {
+  color: #ff4444;
+}
+
+.stat-label {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.graph-legend {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(20, 20, 35, 0.5);
+  border-radius: 8px;
+}
+
+.graph-legend h4 {
+  color: #00ffff;
+  margin: 0 0 15px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-shape {
+  font-size: 1.2em;
+}
+
+.legend-shape.user { color: #4466bb; }
+.legend-shape.file { color: #44ab6b; }
+.legend-shape.device { color: #ab44a0; }
+.legend-shape.ip { color: #ab6b44; }
+.legend-shape.process { color: #6b44ab; }
+.legend-shape.central { 
+  color: transparent;
+  text-shadow: 0 0 0 #ff4444;
+  background: #ff4444;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+.node-details {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(20, 20, 35, 0.8);
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+}
+
+.node-details h4 {
+  color: #00ffff;
+  margin: 0 0 15px;
+}
+
+.node-details p {
+  margin: 8px 0;
+}
+
+.node-details button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  border-radius: 4px;
+  color: #00ffff;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+.no-data h3 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}

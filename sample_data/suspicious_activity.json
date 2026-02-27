@@ -1,0 +1,154 @@
+[
+  {
+    "timestamp": "2024-01-15T08:45:00",
+    "user": "john.smith",
+    "ip": "192.168.1.50",
+    "device": "workstation-01",
+    "file": "/data/financial/q4_report.xlsx",
+    "action": "login"
+  },
+  {
+    "timestamp": "2024-01-15T08:45:30",
+    "user": "john.smith",
+    "ip": "192.168.1.50",
+    "device": "workstation-01",
+    "file": "/data/financial/q4_report.xlsx",
+    "action": "access"
+  },
+  {
+    "timestamp": "2024-01-15T08:46:00",
+    "user": "john.smith",
+    "ip": "192.168.1.50",
+    "device": "workstation-01",
+    "file": "/data/financial/salaries.xlsx",
+    "action": "access"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:00",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/etc/passwd",
+    "action": "login_failed"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:05",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/etc/passwd",
+    "action": "login_failed"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:10",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/etc/shadow",
+    "action": "login_failed"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:12",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/etc/passwd",
+    "action": "login_failed"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:15",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/etc/shadow",
+    "action": "login_failed"
+  },
+  {
+    "timestamp": "2024-01-15T08:47:20",
+    "user": "admin",
+    "ip": "10.0.0.15",
+    "device": "server-01",
+    "file": "/root/.ssh/authorized_keys",
+    "action": "login" 
+  },
+  {
+    "timestamp": "2024-01-15T08:48:00",
+    "user": "hacker.bob",
+    "ip": "45.33.32.156",
+    "device": "external-vpn",
+    "file": "/tmp/mimikatz.exe",
+    "action": "download"
+  },
+  {
+    "timestamp": "2024-01-15T08:48:30",
+    "user": "hacker.bob",
+    "ip": "45.33.32.156",
+    "device": "external-vpn",
+    "file": "/tmp/mimikatz.exe",
+    "action": "execute"
+  },
+  {
+    "timestamp": "2024-01-15T08:49:00",
+    "user": "hacker.bob",
+    "ip": "45.33.32.156",
+    "device": "external-vpn",
+    "file": "/var/log/auth.log",
+    "action": "delete"
+  },
+  {
+    "timestamp": "2024-01-15T08:50:00",
+    "user": "hacker.bob",
+    "ip": "45.33.32.156",
+    "device": "external-vpn",
+    "file": "/data/sensitive/customers.db",
+    "action": "access"
+  },
+  {
+    "timestamp": "2024-01-15T08:52:00",
+    "user": "hacker.bob",
+    "ip": "45.33.32.156",
+    "device": "external-vpn",
+    "file": "/mnt/usb/exfiltration.zip",
+    "action": "write"
+  },
+  {
+    "timestamp": "2024-01-15T23:15:00",
+    "user": "alice.jones",
+    "ip": "192.168.1.60",
+    "device": "laptop-03",
+    "file": "/data/projects/alpha/design.pdf",
+    "action": "login"
+  },
+  {
+    "timestamp": "2024-01-15T23:16:00",
+    "user": "alice.jones",
+    "ip": "192.168.1.60",
+    "device": "laptop-03",
+    "file": "/data/projects/alpha/source_code.zip",
+    "action": "access"
+  },
+  {
+    "timestamp": "2024-01-15T23:20:00",
+    "user": "alice.jones",
+    "ip": "192.168.1.60",
+    "device": "laptop-03",
+    "file": "/data/projects/alpha/database_export.sql",
+    "action": "write"
+  },
+  {
+    "timestamp": "2024-01-15T23:25:00",
+    "user": "alice.jones",
+    "ip": "192.168.1.60",
+    "device": "laptop-03",
+    "file": "/mnt/usb/stolen_data.zip",
+    "action": "write"
+  },
+  {
+    "timestamp": "2024-01-16T02:30:00",
+    "user": "dev.user",
+    "ip": "10.0.0.45",
+    "device": "dev-server",
+    "file": "/home/dev/secrets.txt",
+    "action": "access"
+  }
+]

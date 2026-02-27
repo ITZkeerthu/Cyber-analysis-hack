@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0a0f;
+  color: #e0e0e0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a6a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5a7a;
+}
+
+/* Cyberpunk theme */
+.cyber-bg {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.glow-border {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+/* Status colors */
+.status-high { color: #ff4444; }
+.status-medium { color: #ffaa00; }
+.status-low { color: #44ff44; }
+
+/* Card styles */
+.card {
+  background: rgba(20, 20, 35, 0.8);
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #00ffff;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2a2a4a;
+  padding-bottom: 10px;
+}
