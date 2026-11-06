@@ -1,4 +1,5 @@
 import hashlib
+import hmac
 import os
 from typing import BinaryIO
 
@@ -29,4 +30,4 @@ def verify_file_integrity(file_path: str, expected_hash: str) -> bool:
     if not os.path.exists(file_path):
         return False
     actual_hash = hash_file(file_path)
-    return hashlib.compare_digest(actual_hash, expected_hash)
+    return hmac.compare_digest(actual_hash, expected_hash)

@@ -21,7 +21,7 @@ class EvidenceIngestor:
             return datetime.fromtimestamp(ts_value)
         try:
             return date_parser.parse(str(ts_value))
-        except:
+        except (ValueError, OverflowError, TypeError):
             return datetime.utcnow()
     
     def normalize_log_entry(self, entry: Dict[str, Any]) -> Dict[str, Any]:
