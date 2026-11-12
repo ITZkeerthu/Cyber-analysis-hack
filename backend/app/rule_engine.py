@@ -77,6 +77,8 @@ class RuleEngine:
         failed_logins = defaultdict(list)
         
         for e in evidence:
+            if e.timestamp is None:
+                continue
             if e.action in ["login_failed", "failed_login", "auth_failed", "authentication_failed"]:
                 failed_logins[e.user].append(e.timestamp)
         
@@ -148,6 +150,8 @@ class RuleEngine:
         end_hour = self.thresholds["business_hours_end"]
         
         for e in evidence:
+            if e.timestamp is None:
+                continue
             if e.action in ["login", "logon", "signin", "authentication"]:
                 hour = e.timestamp.hour
                 if hour < start_hour or hour >= end_hour:
@@ -170,6 +174,8 @@ class RuleEngine:
         user_ips = defaultdict(lambda: defaultdict(list))
         
         for e in evidence:
+            if e.timestamp is None or not e.ip_address:
+                continue
             if e.action in ["login", "logon", "signin"]:
                 date_key = e.timestamp.date()
                 user_ips[e.user][date_key].append(e.ip_address)
