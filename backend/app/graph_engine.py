@@ -4,6 +4,7 @@ from typing import List, Dict, Any, Set, Tuple
 from collections import defaultdict
 from sqlalchemy.orm import Session
 from .models import Evidence, Entity
+from .security import hash_string
 import json
 
 class GraphEngine:
@@ -35,7 +36,7 @@ class GraphEngine:
             ip_id = f"ip_{e.ip_address}"
             
             if e.file_path:
-                file_id = f"file_{hash(e.file_path) % 10000}"
+                file_id = f"file_{hash_string(e.file_path)[:16]}"
             else:
                 file_id = None
             
@@ -118,7 +119,7 @@ class GraphEngine:
             "nodes": nodes,
             "edges": edges,
             "central_nodes": central_nodes,
-            "centrality_scores": {k: round(v, 4) for k, v in centrificality_scores.items()}
+            "centrality_scores": {k: round(v, 4) for k, v in centrality_scores.items()}
         }
     
     def _calculate_centrality(self) -> Dict[str, float]:
